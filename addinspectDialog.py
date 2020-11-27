@@ -117,7 +117,7 @@ class addInspectDialog(QDialog):
         if(name != ""):
             query = QSqlQuery()
             query.exec_("INSERT INTO inspect(id,name,inspDetils,date,address,joinDep,remark) SELECT MAX(id)+1,'{0}','{1}','{2}','{3}','{4}','{5}' FROM inspect".format(name,inspect,date,address,joinno,remark))
-            QMessageBox.question(self, "Success","The newly added rectification inspection is successful!",QMessageBox.Ok)
+            QMessageBox.question(self, "Success","Rectification inspection has been added successfully!",QMessageBox.Ok)
             self.txtName.clear()
             self.txtInspect.clear()
             self.dateEdit.setDate(QDate.currentDate())
