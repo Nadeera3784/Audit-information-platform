@@ -12,6 +12,7 @@ Mange your all audit information with Audit information platform.
   - Print
 
 ### Installation
+Audit information platform requires [Python 3](https://www.python.org/) v3+ to run.
 ```sh
 $ python userLoginDialog.py
 ```
