@@ -18,3 +18,7 @@ Mange your all audit information with Audit information platform.
   * [jinja2] - designer-friendly templating language for Python
   * [xlwt] - generate spreadsheet files compatible with Microsoft Excel
   * [sqlite3] - SQLite database library
+
+License
+----
+MIT
