@@ -359,7 +359,7 @@ class MeetingTableView(QtWidgets.QDialog):#QWidget
             QMessageBox.critical(self, "Error","Please select a meeting",QMessageBox.Ok)
             return
 
-    # 删除一行数据
+
     @QtCore.pyqtSlot()
     def del_row_data(self):
         try:
