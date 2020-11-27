@@ -12,6 +12,9 @@ Mange your all audit information with Audit information platform.
   - Print
 
 ### Installation
+```sh
+$ python userLoginDialog.py
+```
 
 ### Tech
   Audit information platform uses a number of open source projects to work properly:
