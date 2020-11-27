@@ -11,6 +11,7 @@ Mange your all audit information with Audit information platform.
   - Import and Export documents as Exel file
   - Print
 
+### Installation
 
 ### Tech
   Audit information platform uses a number of open source projects to work properly:
