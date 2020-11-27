@@ -346,7 +346,7 @@ class MeetingTableView(QtWidgets.QDialog):#QWidget
                         self.max_date = modMeetingDialog.dateEdit.date()
                         self.dateEndEdit.setMaximumDate(self.max_date)
                     self.searchButtonClicked2()
-                    QMessageBox.question(self, "Success","Successfully modify the meeting!",QMessageBox.Ok)
+                    QMessageBox.question(self, "Success","Meeting has been updated Successfully!",QMessageBox.Ok)
             else:
                 if modMeetingDialog.dateEdit.date() < self.min_date:
                     self.min_date = modMeetingDialog.dateEdit.date()
