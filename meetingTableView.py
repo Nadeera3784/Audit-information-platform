@@ -356,7 +356,7 @@ class MeetingTableView(QtWidgets.QDialog):#QWidget
                     self.dateEndEdit.setMaximumDate(self.max_date)
                 self.searchButtonClicked2()
         except Exception as e:
-            QMessageBox.critical(self, "Error","Please select meeting record",QMessageBox.Ok)
+            QMessageBox.critical(self, "Error","Please select a meeting",QMessageBox.Ok)
             return
 
     # 删除一行数据
@@ -365,7 +365,7 @@ class MeetingTableView(QtWidgets.QDialog):#QWidget
         try:
             index = self.tableView.currentIndex()
             if not index.isValid():
-                QMessageBox.critical(self, "Error","Please select meeting record",QMessageBox.Ok)
+                QMessageBox.critical(self, "Error","Please select a meeting",QMessageBox.Ok)
                 return
             rows = set()
             for idx in self.tableView.selectedIndexes():
