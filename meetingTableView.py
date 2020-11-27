@@ -379,7 +379,7 @@ class MeetingTableView(QtWidgets.QDialog):#QWidget
                 query.exec_("DELETE FROM metting WHERE id = {0}".format(id))
             self.searchButtonClicked2()
         except Exception as e:
-            QMessageBox.critical(self, "Error","Please select meeting record，Then delete.",QMessageBox.Ok)
+            QMessageBox.critical(self, "Error","Please select a meeting.",QMessageBox.Ok)
             return
 
     def setButtonStatus(self):
