@@ -130,7 +130,7 @@ class addInstructDialog(QDialog):
         if(name != ""):
             query = QSqlQuery()
             query.exec_("INSERT INTO instruct(name,instrDetils,date,docName,docNo,performance,remark) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}')".format(name,instruct,date,docName,docNo,performance,remark))
-            QMessageBox.question(self, "Success","Successfully added rectification opinions!",QMessageBox.Ok)
+            QMessageBox.question(self, "Success","Rectification opinion has been added Successfully!",QMessageBox.Ok)
             self.txtName.clear()
             self.txtInstruct.clear()
             self.dateEdit.setDate(QDate.currentDate())
