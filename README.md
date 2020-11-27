@@ -15,7 +15,10 @@ Mange your all audit information with Audit information platform.
 ```sh
 $ python userLoginDialog.py
 ```
-
+```sh
+username : admin
+password : 123456
+```
 ### Tech
   Audit information platform uses a number of open source projects to work properly:
   * [PyQt5] - GUI toolkit
