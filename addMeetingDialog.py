@@ -39,7 +39,7 @@ class addMeetingDialog(QDialog):
         self.lblTime = QtWidgets.QLabel(self)
         self.lblTime.setObjectName("lblTime")
         self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.lblTime)
-        self.dateEdit = QDateEdit(QDate.currentDate(), addMeetingDialog)
+        self.dateEdit = QDateTimeEdit(QDate.currentDate(), addMeetingDialog)
         self.dateEdit.setFixedWidth(245)
         self.dateEdit.setObjectName("dateEdit")
         self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.dateEdit)
@@ -86,9 +86,13 @@ class addMeetingDialog(QDialog):
         self.buttonBox.rejected.connect(addMeetingDialog.reject)
         QtCore.QMetaObject.connectSlotsByName(addMeetingDialog)
         self.btnAddMeeting.clicked.connect(self.add_data)
+
         self.dateEdit.setDisplayFormat("yyyy/MM/dd")
         self.dateEdit.setCalendarPopup(True)
-        self.dateEdit.calendarWidget().installEventFilter(self)
+
+        # self.dateEdit.setDisplayFormat("yyyy/MM/dd")
+        # self.dateEdit.setCalendarPopup(True)
+        # self.dateEdit.calendarWidget().installEventFilter(self)
 
     def retranslateUi(self, addMeetingDialog):
         _translate = QtCore.QCoreApplication.translate

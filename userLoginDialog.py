@@ -5,6 +5,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtSql import QSqlQuery
 from MainWindow import *
+from ui.Notification import NotificationWindow
 
 class Ui_MainWindow(QtWidgets.QMainWindow):
 
@@ -76,9 +77,13 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
             MainWindow.close()
         else:
             QMessageBox.information(self, 'Error', "Username or password is incorrect!")
+            NotificationWindow.info('Error', 'Shit wnt down')
             self.lineUserEdit.setFocus()
             self.lineUserEdit.clear()
             self.linePasswordEdit.clear()
+
+    def callback():
+        print('boom')
 
 if __name__ == "__main__":
     import sys
