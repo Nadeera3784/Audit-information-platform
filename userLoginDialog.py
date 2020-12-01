@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import *
+#from PyQt5.QtWidgets import *
+
+from PyQt5.QtWidgets import QApplication, QPushButton, QWidget, QLineEdit, QPushButton, QMainWindow, QApplication
+
 from PyQt5.QtCore import *
 from PyQt5.QtSql import QSqlQuery
 from MainWindow import *
