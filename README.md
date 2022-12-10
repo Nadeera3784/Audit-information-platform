@@ -1,7 +1,7 @@
 # Audit information platform
 Mange your all audit information with Audit information platform. 
 
-![Preview](https://raw.githubusercontent.com/Nadeera3784/Audit_information_platform_python/master/screenshot.png)
+![Preview](https://raw.githubusercontent.com/Nadeera3784/Audit_information_platform_python/master/screenshot.PNG)
 
 # Features
  
